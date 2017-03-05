@@ -12,6 +12,8 @@ php:
     image: my-php
     volumes:
     - ./code:/code
+    links:
+    - db
 db:
     image: mysql
     ports:
